@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Human list</title>
+</head>
+<body>
+    <h1>Humans</h1>
+    <h3><a href="{% url 'human_create' %}">Create Profile</a></h3>
+    {% for humans in human_list %}
+        <p>{{ humans.name}} - {{ humans.age}}</p>
+        <p><a href="{% url 'profile_detail' humans.pk %}">Details</a></p>
+    {% endfor %}
+    {% for reg_humans in reg_human_list %}
+        <p>{{ reg_humans.name}} - {{ reg_humans.age}}</p>
+        <p><a href="{% url 'profile_detail' reg_humans.pk %}">Details</a></p>
+    {% endfor %}
+</body>
+</html>

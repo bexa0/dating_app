@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Profile</title>
+</head>
+<body>
+    <form action="" method="POST" style="width: 500px; margin: auto;">
+            {% csrf_token %}
+            <div style="margin-top: 50px;">
+                <label for="name">Name</label>
+                <input name="name" type="text" id="name">
+            </div><br>
+            <div>
+                <label for="surname">Surname</label>
+                <input name="surname" type="text" id="surname">
+            </div><br>
+            <div>
+                <label for="age">Age</label>
+                <input name="age" type="number" id="age">
+            </div><br>
+            <div>
+                <label for="address">Address</label>
+                <input name="address" type="number" id="address">
+            </div><br>
+            <div>
+                <label for="favorite_music">Favorite Music</label>
+                <input name="favorite_music" type="text" id="favorite_music">
+            </div><br>
+            <div>
+                <label for="favorite_hobbies">Favorite Hobbies</label>
+                <input name="favorite_hobbies" type="text" id="favorite_hobbies">
+            </div><br>
+            <div class="mb-3">
+                <label for="favorite_anime">Favorite Anime</label>
+                <input name="favorite_anime" style="resize: none;" cols="50" rows="5" id="favorite_anime">
+            </div><br>
+
+            <button name="add_button" type="submit" class="btn btn-primary" style="margin-top: 20px;">Add Profile</button>
+    </form>
+</body>
+</html>

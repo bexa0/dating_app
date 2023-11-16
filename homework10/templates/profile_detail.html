@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Human Detail</title>
+</head>
+<body>
+    <h1>Profile detail</h1>
+
+    <p>{{ human_pk.name }}</p>
+    <p>{{ human_pk.surname }}</p>
+    <p>{{ human_pk.age }}</p>
+    <p>{{ human_pk.favorite_music }}</p>
+    <p>{{ human_pk.favorite_hobbies }}</p>
+    <p>{{ human_pk.favorite_anime }}</p>
+    <p><a href="{% url 'profile_list' %}">Back</a></p>
+
+</body>
+</html>
